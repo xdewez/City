@@ -5,14 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
     <title>Brussels</title>
 </head>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 
 <body>
     <!-- mpc    À METTRE ?!<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -30,105 +25,104 @@
             </li>
 
             <li><a href="cultur.html">Cultur</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-
 
         <div id="search">search</div>
         </div>
     </header>
+    <div>
+    <section id="image_contact_us"><img src="images/contact_us1.jpg" name="image_contact_us" alt="contact_us"></section>
+    </div>
+    <section>
+        <div id="contact_us" name="contact_us">
+            <h3 class="contact" id="contact-us"> Contact Us </h3>
+            <form action="https://formspree.io/f/xyylgwdn" method="POST">
+                </label>
+                <!--voir taille width CSS -->
+                <input class="name_mail_contact" type="text" name="name" class="form-control" placeholder="Name">
+                <input class="name_mail_contact" type="email" name="_replyto" placeholder="E-mail"> <br><br>
+                <label name="subject">Please choose your subject :</label>
+                <select class="subject" name="subject" id="subject">
+                    <option value="evaluation">Evaluation</option>
+                    <option value="Comment">Comment</option>
+                    <option value="Need-Information">Need some information</option>
+                    <option value="other">Other</option> <br>
+                </select><br><br>
 
-    <section id="contact_us"><img src="images/contact_us.jpg" name="atonium" alt="photo_atonium"></section>
-
-    <section id="contact-us">
-        <h4> Contact Us </h4>
-        <form action="https://formspree.io/f/xyylgwdn" method="POST">
-            </label>
-            <!--voir taille width CSS -->
-            <input type="text" name="name" class="form-control" placeholder="Name"> <br><br>
-            <input type="email" name="_replyto" placeholder="E-mail"> <br><br>
-            <div class="form-control mb-4">
-                <textarea class="message" type="text" name="message" placeholder="Your message:" style="width: 1000px"
-                    width=1200px></textarea><br>
-            </div>
-            <label name="subject">Choose your subject please:</label>
-            <select name="subject" id="subject">
-                <option value="evaluation">Evaluation</option>
-                <option value="Comment">Comment</option>
-                <option value="Need-Information">Need some information</option>
-                <option value="other">Other</option> <br><br>
-            </select>
-            <button class="buttoninfo" type="submit" value="Send">Send</button>
-        </form> <br>
+                <div class="form-control">
+                    <textarea class="message" type="text" name="message" placeholder="Your message"
+                        style="width: 800px" style="height:400rem" ></textarea><br>
+                </div>
+                <button class="buttoninfo" type="submit" value="Send">Send</button>
+            </form> <br>
+        </div>
     </section>
-    <section class="map">
+    <div class="map">
         <h3 class="Where-to-find"> Where you can find us</h3>
         <div id="map-container-google" class="z-depth-1-half map-container" style="height: auto; width: 450px;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.7422615279849!2d4.358775707372698!3d50.85025746721319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c59e8cd297cb%3A0x5e17c33419e8091d!2sWild%20Code%20School%20Training%20Web%20Developer!5e0!3m2!1spt-PT!2sbe!4v1616511570359!5m2!1spt-PT!2sbe"
-                width="600" height="450" style="border:0;" allowfullscreen="auto" loading="lazy"></iframe>
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </section>
-    <section class="identification-team">
-        <h1> Our Team</h1>
+    </div>
+    <h1> Our Team</h1>
+    <div class="identification-team">
         <div class="id-Léopold">
-            <img class="id-Léopold" src="images/Leopold.jpg" name="Leopold">
-            <p>Leopold</p>
+            <img class="id-photo" src="images/Leopold.jpg" name="Leopold">
+            <p>Léopold</p>
+            <p>Web Develloper, </p>
         </div>
         <div class="id-Xavier">
-            <img class="id-Xavier" src="images/Xavier.jpg" name="Xavier">
+            <img class="id-photo" src="images/Xavier.jpg" name="Xavier">
             <p>Xavier</p>
         </div>
         <div class="id-Mario">
-            <img class="id-Mario" src="images/Mario.jpg" name="Mario">
+            <img class="id-photo" src="images/Mario.jpg" name="Mario">
             <p>Mário</p>
         </div>
-    </section>
+    </div>
 
     <!--for all pages-->
     <footer>
-        <section id="Social Network">
-            <div>
+        <section id="Social-Network" class="Social-Network">
+            <div id="Social-Network-Icons">
                 <ul>
                     <a href="https://www.facebook.com/">
-                        <li><img src="icons/Facebook.jpg" name="Facebook" alt="icon-Facebook">
+                        <li><img src="icons/Facebook.jpg"  class="Social-Network-Icons" name="Facebook" alt="icon-Facebook">
                         </li>
                     </a>
                     <a href="https://www.instagram.com/">
-                        <li><img src="icons/Instagram.jpg" name="Instagram" alt="icon-Instagram">
+                        <li><img src="icons/Instagram.jpg"  class="Social-Network-Icons" name="Instagram" alt="icon-Instagram">
                         </li>
                     </a>
                     <a href="https://twitter.com/">
-                        <li><img src="icons/Twitter.jpg" name="Twitter" alt="icon-Twitter">
+                        <li><img src="icons/Twitter.jpg"  class="Social-Network-Icons" name="Twitter" alt="icon-Twitter">
                         </li>
                     </a>
                     <a href="https://www.youtube.com/">
-                        <li><img src="icons/Youtube.jpg" name="Youtube" alt="icon-Youtube">
+                        <li><img src="icons/Youtube.jpg"  class="Social-Network-Icons" name="Youtube" alt="icon-Youtube">
                         </li>
                     </a>
                     <a href="https://web.whatsapp.com/">
-                        <li><img src="icons/Whatsapp.jpg" name="Whatsapp" alt="icon-Whastapp">
+                        <li><img src="icons/Whatsapp.jpg"  class="Social-Network-Icons" name="Whatsapp" alt="icon-Whastapp">
                         </li>
                     </a>
                 </ul>
             </div>
-            <div id="Connect With Us">
-                <ul>
-                    <li>CONNNECT WITH US</li>
+            <div id="Connect With Us" >
+                <ul class="Newsletter"> <h3>CONNECT WITH US</h3>
                     <form action="https://formspree.io/f/xyylgwdn" method="POST">
-                        <label>
-                            Your email:
+                        <label id="newsletter" name="newsletter"> Enter your e-mail: <br>
                             <input type="email" name="_replyto" placeholder="Newsletter">
                         </label>
-                        <label>
+                        <button class="buttoninfo" type="submit" value="Send">Send</button>
                     </form>
                 </ul>
             </div>
-            <div>
-                <li>
-                    <h3>ABOUT US</h3>
-                    <p>Project from students at Wild Code School Brussels 2021 </p>
-                </li>
+            <div class="about_us">
+                <h3>ABOUT US</h3>
+                <p>Project from students at Wild Code School Brussels 2021 </p>
             </div>
         </section>
 

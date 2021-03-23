@@ -1,7 +1,4 @@
 
-
-
-
 /*all*/
 @media <media types> and (<media features>) {
 
@@ -18,7 +15,7 @@
 
 /* header */
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +40,6 @@ ul {
 }
 
 li {
-    
     margin-left: 10px;
     margin-right: 10px;
     list-style-type: none;
@@ -60,17 +56,100 @@ li {
 
 
 /* centre*/
-.boxes {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+#image_contact_us{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150%;
+}
+
+.contact_us{ /*2nd part - contact zone to message */
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /*don't move at all
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    */
+    padding-left: 25px; 
+    padding-right: 25px;
   }
+.name_mail_contact{ /*2nd part - name and mail zone */
+    background-color:rgba(246, 242, 242, 0.959);
+    border-radius: 10px;
+    width: 170px;
+    height: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+.subject{   /*2nd part - selection topic zone */
+    background-color:rgba(246, 242, 242, 0.959);
+    border-radius: 10px;
+    align-content: center;
+    margin-left: 10px;;
+    width: 170px;
+    height: 25px;
+}
 
+.form-control{
+    display: flex;
+    justify-content: auto;
+    align-content:auto; /*don't move at all*/
+    min-block-size: auto; /*don't move at all*/
+}
+.bottoninfo{/*what to do?!*/
+}
 
-width
+.map{/*what to do?!*/
+    
+}
 
+.identification-team{
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+}
+
+.id-photo{
+    border-radius: 20%;
+    margin-left: 5%;
+    margin-left: 5%;
+    /*type letter*/
+}
 
   /*general for all*/
-  .footer{
-      
+  .footer{ 
+    display:flex;
+    flex-direction: center;
+    align-content:space-around;
+  }
+
+  .Social-Network{
+    display:flex;
+    flex-direction: center;
+    align-content:space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .Social-Network-Icons{
+    display:flex;
+    flex-direction: left;
+    align-content:space-around;
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  .Newsletter{
+    display: grid;
+    align-content: center;
+    margin-right: 30px;
+  }
+
+  .about_us{
+    display: grid;
+    flex-direction: right;
+    align-content: center;    
+    margin-left: 30px;
   }
