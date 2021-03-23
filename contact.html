@@ -9,13 +9,16 @@
     <title>Brussels</title>
 </head>
 
-<body> <!-- mpc    À METTRE ?!<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- mpc    À METTRE ?!<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
  À VOIR AVEC LEOPOLD -->
-    <header>   
-
-
-
+    <header>
         <div id="nav_bar"></div>
 
         <ul>
@@ -35,27 +38,70 @@
         </div>
     </header>
 
-    <section id="articles">
-        <article id="box">
-        </article>
-        <article id="box">
-        </article>
-        <article id="box">
-        </article>
+    <section id="atonium"><img src="images/contact_us.jpg" name="atonium" alt="photo_atonium"></section>
+
+    <section id="contact-us">
+        <h4> Contact Us </h4>
+        <form action="https://formspree.io/f/xyylgwdn" method="POST">
+            <label>
+                <input type="text"name="name" class="form-control" placeholder="Name">
+                <input type="email" name="_replyto" placeholder="E-mail">
+                <select>
+                    
+                </select>
+                <div class="form-control mb-4">
+                <textarea name="message" placeholder="Your message:"></textarea>
+                </div>
+                <button class="buttoninfo" type="submit" value="Send">Send</button>
+            </label>
+        </form>
     </section>
-    <section>
-        <div>Video Brussels</div>
-    </section>
-    <section>
-        <h1> Tell us how you fell about it        </h1>
-        <h2>Feel free to share your idea and what you think about this website</h2>
-        <P>Our services have the pleasur to know about it, and you can click here to tell us more</p>
-        <button></button> <!--dirige ver la page commentaire/evaluation/contact-->
-    </section>
+<section class="map">
+    <div>
+        <iframe src="https://www.google.be/maps/place/Wild+Code+School+Training+Web+Developer/@50.8502575,4.3587757,19.3z/data=!4m5!3m4!1s0x47c3c59e8cd297cb:0x5e17c33419e8091d!8m2!3d50.8502711!4d4.3585514?hl=pt-PT" width="800" height="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    </div>
+</section>
+<section>
+    <div>
+        <h1> Our Team</h1>
+        <p>Xavier
+            Leolpod
+            Mário
+        </p>
+    </div>
+</section>
 
 
-
+    <!--for all pages-->
     <footer>
+        <section id="Social Network">
+            <ul>
+                <li><img src="icons/Facebook.jpg" name="Facebook" alt="icon-Facebook"  href="https://www.facebook.com/"><a>
+                       </a>Facebook</a></li>
+                <li><img src="icons/Instagram.jpg" name="Instagram" alt="icon-Instagram"><a
+                        href="https://www.instagram.com/">Instagram</a></li>
+                <li><img src="icons/Twitter.jpg" name="Twitter" alt="icon-Twitter"><a
+                        href="https://twitter.com/">Twitter</a></li>
+                <li><img src="icons/Youtube.jpg" name="Youtube" alt="icon-Youtube"><a
+                        href="https://www.youtube.com/">Youtube</a></li>
+                <li><img src="icons/Whatsapp.jpg" name="Whatsapp" alt="icon-Whastapp"><a
+                        href="https://web.whatsapp.com/">Whatsapp</a></li>
+            </ul>
+        </section>
+        <section id="Connect With Us">
+            <ul>
+                <li>CONNNECT WITH US</li>
+                <form action="https://formspree.io/f/xyylgwdn" method="POST">
+                    <label>
+                        Your email:
+                        <input type="email" name="_replyto" placeholder="Newsletter">
+                    </label>
+                    <label>
+                        
+                    </label>
+                    <select>
+            </ul>
+        </section>
 
     </footer>
 
