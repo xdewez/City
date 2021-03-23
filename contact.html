@@ -38,69 +38,98 @@
         </div>
     </header>
 
-    <section id="atonium"><img src="images/contact_us.jpg" name="atonium" alt="photo_atonium"></section>
+    <section id="contact_us"><img src="images/contact_us.jpg" name="atonium" alt="photo_atonium"></section>
 
     <section id="contact-us">
         <h4> Contact Us </h4>
         <form action="https://formspree.io/f/xyylgwdn" method="POST">
-            <label>
-                <input type="text"name="name" class="form-control" placeholder="Name">
-                <input type="email" name="_replyto" placeholder="E-mail">
-                <select>
-                    
-                </select>
-                <div class="form-control mb-4">
-                <textarea name="message" placeholder="Your message:"></textarea>
-                </div>
-                <button class="buttoninfo" type="submit" value="Send">Send</button>
             </label>
-        </form>
+            <!--voir taille width CSS -->
+            <input type="text" name="name" class="form-control" placeholder="Name"> <br><br>
+            <input type="email" name="_replyto" placeholder="E-mail"> <br><br>
+            <div class="form-control mb-4">
+                <textarea class="message" type="text" name="message" placeholder="Your message:" style="width: 1000px"
+                    width=1200px></textarea><br>
+            </div>
+            <label name="subject">Choose your subject please:</label>
+            <select name="subject" id="subject">
+                <option value="evaluation">Evaluation</option>
+                <option value="Comment">Comment</option>
+                <option value="Need-Information">Need some information</option>
+                <option value="other">Other</option> <br><br>
+            </select>
+            <button class="buttoninfo" type="submit" value="Send">Send</button>
+        </form> <br>
     </section>
-<section class="map">
-    <div>
-        <iframe src="https://www.google.be/maps/place/Wild+Code+School+Training+Web+Developer/@50.8502575,4.3587757,19.3z/data=!4m5!3m4!1s0x47c3c59e8cd297cb:0x5e17c33419e8091d!8m2!3d50.8502711!4d4.3585514?hl=pt-PT" width="800" height="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-    </div>
-</section>
-<section>
-    <div>
+    <section class="map">
+        <h3 class="Where-to-find"> Where you can find us</h3>
+        <div id="map-container-google" class="z-depth-1-half map-container" style="height: auto; width: 450px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.7422615279849!2d4.358775707372698!3d50.85025746721319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c59e8cd297cb%3A0x5e17c33419e8091d!2sWild%20Code%20School%20Training%20Web%20Developer!5e0!3m2!1spt-PT!2sbe!4v1616511570359!5m2!1spt-PT!2sbe"
+                width="600" height="450" style="border:0;" allowfullscreen="auto" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section class="identification-team">
         <h1> Our Team</h1>
-        <p>Xavier
-            Leolpod
-            Mário
-        </p>
-    </div>
-</section>
-
+        <div class="id-Léopold">
+            <img class="id-Léopold" src="images/Leopold.jpg" name="Leopold">
+            <p>Leopold</p>
+        </div>
+        <div class="id-Xavier">
+            <img class="id-Xavier" src="images/Xavier.jpg" name="Xavier">
+            <p>Xavier</p>
+        </div>
+        <div class="id-Mario">
+            <img class="id-Mario" src="images/Mario.jpg" name="Mario">
+            <p>Mário</p>
+        </div>
+    </section>
 
     <!--for all pages-->
     <footer>
         <section id="Social Network">
-            <ul>
-                <li><img src="icons/Facebook.jpg" name="Facebook" alt="icon-Facebook"  href="https://www.facebook.com/"><a>
-                       </a>Facebook</a></li>
-                <li><img src="icons/Instagram.jpg" name="Instagram" alt="icon-Instagram"><a
-                        href="https://www.instagram.com/">Instagram</a></li>
-                <li><img src="icons/Twitter.jpg" name="Twitter" alt="icon-Twitter"><a
-                        href="https://twitter.com/">Twitter</a></li>
-                <li><img src="icons/Youtube.jpg" name="Youtube" alt="icon-Youtube"><a
-                        href="https://www.youtube.com/">Youtube</a></li>
-                <li><img src="icons/Whatsapp.jpg" name="Whatsapp" alt="icon-Whastapp"><a
-                        href="https://web.whatsapp.com/">Whatsapp</a></li>
-            </ul>
-        </section>
-        <section id="Connect With Us">
-            <ul>
-                <li>CONNNECT WITH US</li>
-                <form action="https://formspree.io/f/xyylgwdn" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="_replyto" placeholder="Newsletter">
-                    </label>
-                    <label>
-                        
-                    </label>
-                    <select>
-            </ul>
+            <div>
+                <ul>
+                    <a href="https://www.facebook.com/">
+                        <li><img src="icons/Facebook.jpg" name="Facebook" alt="icon-Facebook">
+                        </li>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <li><img src="icons/Instagram.jpg" name="Instagram" alt="icon-Instagram">
+                        </li>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <li><img src="icons/Twitter.jpg" name="Twitter" alt="icon-Twitter">
+                        </li>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <li><img src="icons/Youtube.jpg" name="Youtube" alt="icon-Youtube">
+                        </li>
+                    </a>
+                    <a href="https://web.whatsapp.com/">
+                        <li><img src="icons/Whatsapp.jpg" name="Whatsapp" alt="icon-Whastapp">
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div id="Connect With Us">
+                <ul>
+                    <li>CONNNECT WITH US</li>
+                    <form action="https://formspree.io/f/xyylgwdn" method="POST">
+                        <label>
+                            Your email:
+                            <input type="email" name="_replyto" placeholder="Newsletter">
+                        </label>
+                        <label>
+                    </form>
+                </ul>
+            </div>
+            <div>
+                <li>
+                    <h3>ABOUT US</h3>
+                    <p>Project from students at Wild Code School Brussels 2021 </p>
+                </li>
+            </div>
         </section>
 
     </footer>
