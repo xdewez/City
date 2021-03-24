@@ -1,50 +1,217 @@
 /* header */
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section_haut {
+  display: flex;
 }
 
-#logo_city {
-    width: 100px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  width: 100%;
 }
 
-#nav_bar {
-    display: flex;
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
+.header li a:hover, .header .menu-btn:hover {
+  background-color: #f4f4f4;
 }
 
-li {
-    
-    margin-left: 10px;
-    margin-right: 10px;
-    list-style-type: none;
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-#search {
-    background-color: lightgray;
-    border-radius: 1em;
-    width: 100px;
-    height: 20px;
-    margin-top: 15px;
-    padding-left: 10px;
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
-#atonium {
-    display: flex;
-    justify-content: center;
+/* menu icon */
 
-#articles {
-    display: flex;
-    justify-content: space-around;
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 200;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+body {}
+
+.image_title {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: url(images/atonium.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700PX;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+}
+
+#wild {
+  color: red;
+}
+
+.boxx {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.content {
+  width: 60%;
+  text-align: center;
+}
+
+.centre {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5em;
+}
+
+#box_1 {
+  width: 250px;
+  height: 250px;
+  background-color: lightgray;
+  border-radius: 0.5em;
+  opacity: 0.8;
+}
+
+#box_2 {
+  width: 250px;
+  height: 250px;
+  background-color: lightgray;
+  border-radius: 0.5em;
+  opacity: 0.8;
+}
+
+#box_3 {
+  width: 250px;
+  height: 250px;
+  background-color: lightgray;
+  border-radius: 0.5em;
+  opacity: 0.8;
+}
+
+#blague {
+  display: flex;
+  justify-content: center;
+}
+
+.events {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5em;
 }
