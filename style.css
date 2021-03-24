@@ -43,8 +43,4 @@ li {
 #atonium {
     display: flex;
     justify-content: center;
-
-#articles {
-    display: flex;
-    justify-content: space-around;
 }
