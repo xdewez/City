@@ -186,13 +186,13 @@ h1 {
   }
 
 #contact{
-  color: red;
+  color:white;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #us{
-  color: white;
+  color: red;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -289,65 +289,62 @@ textarea{
 
 
 .identification-team{
-    display: flex;
-    justify-content: space-around;
-    align-content:center;
-    border:solid black 2px;
+  display: flex;
+  justify-content: space-around;
+  align-content:center;
+  border:solid black 2px;
 }
 
 .id-photo{
-    border-radius: 20%;
-    margin-left: 5%;
-    margin-left: 5%;
-    /*type letter*/
-    border:solid black 2px;
+  border-radius: 20%;
+  margin-left: 5%;
+  margin-left: 5%;
+  /*type letter*/
+  border:solid black 2px;
 }
 
   /*general for all*/
-  footer{
-    display:flex;
-    background-color: rgb(186, 186, 187);
-    border:solid black 2px;
+  
+footer{
+  background-color: rgb(186, 186, 187,0.8);
+}
+
+.footer{   
+}
+
+.Social-Network{
+  display:flex;  
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  border:solid blue 2px;
+}
+
+.Social-Network-Icons{
+  
+  justify-content: space-around;
+  align-content: center;
+  margin-top: auto;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.Newsletter{
+  display: flex;
+  /*align-content: center;
+  margin-right: 30px;
+  */border:solid black 2px;
+}
+
+.about_us{
+  display: flex;
+  align-items: column;
+  border:solid black 2px;
+  flex-direction: column;
  
-  }
-  .footer{ 
-    display:flex;
-    flex-direction: center;
-    /*align-content: space-around;*/   
-  }
-
-  .Social-Network{
-    display:flex;
-    flex-direction: center;
-    /*align-content: space-around;*/
-    margin-left: 5%;
-    margin-right: 5%;
-    border:solid black 2px;
-  }
-
-  .Social-Network-Icons{
-    display:flex;
-    flex-direction: left;
-    align-content:space-around;
-    margin-top: auto;
-    border-radius: 50%;
-    width: 50%;
-    border:solid black 2px;
-  }
-
-  .Newsletter{
-    display: flex;
-    /*align-content: center;
-    margin-right: 30px;
-    */border:solid black 2px;
-  }
-
-  .about_us{
-    display: flex;
-    align-items: column;
-    border:solid black 2px;
-    flex-direction: column;
-   
    
     /*flex-direction: right;
     align-content: center;    
