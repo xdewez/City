@@ -307,6 +307,7 @@ textarea{
   
 footer{
   background-color: rgb(186, 186, 187,0.8);
+  border:solid blue 2px;
 }
 
 .footer{   
@@ -315,41 +316,44 @@ footer{
 .Social-Network{
   display:flex;  
   flex-direction: row;
-  justify-content: space-around;
-  border: 1px;
+  justify-content:space-between;
+  width: auto;
+  height: 60px;
+  border: auto;
   align-content: center;
   margin-left: 5%;
   margin-right: 5%;
   border:solid blue 2px;
 }
 
+.links{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+  width: auto;
+  height: auto;
+  }
+
 .Social-Network-Icons{
-  
-  justify-content: space-around;
-  align-content: center;
-  margin-top: auto;
+  display: flex;
+  /*justify-content: space-around;*/
+  /*align-content: left;*/
+  margin: auto;
   border-radius: 50%;
-  width: 50%;
+  width:50%;
 }
 
 .Newsletter{
   display: flex;
-  /*align-content: center;
-  margin-right: 30px;
-  */border:solid black 2px;
+  justify-content: space-around;
+  align-content: center;
+  margin-top:2.5%;
 }
 
 .about_us{
   display: flex;
-  align-items: column;
-  border:solid black 2px;
   flex-direction: column;
- 
-   
-    /*flex-direction: right;
-    align-content: center;    
-    margin-left: 30px;
-    */
-
-  }
-
+  justify-content:center;
+  align-items: left;
+}
