@@ -2,68 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Brussels</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Brussels</title>
 </head>
 
 <body>
-    <header>   
+  <div class="section_haut">
+    <header class="header">
+      <a href="index.html">
+        <div id="logo"><img src="images/bb.png"></div>
+      </a>
 
-
-
-        <div id="nav_bar"></div>
-
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="visit.html">Visit</a></li>
-
-            <li>
-                <img class="logo" src="images/logo.png" name="logo_brussels" alt="logo">
-            </li>
-
-            <li><a href="cultur.html">Cultur</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-
-
-        <div id="search">search</div>
-        </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </header>
+  </div>
 
-    
-    <section id="atomium"><img src="images/atomium.jpg" name="atomium" alt="photo_atomium"></section>
+  <div class="image_title">
+    <div id="image"></div>
 
+    <div class="title_wild_brussels">
+      <h1 id="title_wild">Wild</h1>
+      <h1 id="title_brussels">Brussels</h1>
+    </div>
+  </div>
 
-    <section id="articles">
-        <article id="box_1">
-            <img src="images/bxl.jpg" name="bxl" alt="photo de bxl">
-        </article>
-        <article id="box_2">
-            <img src="images/chou.jpg" name="chou" alt="photo de choux">
-        </article>
-        <article id="box_3">
-            <img src="images/frite.jpg" name="frites" alt="photo panneau">
-        </article>
-    </section>
-    <section>
-        <div>Video Brussels</div>
-    </section>
-    <section>
-        <h1> Tell us how you fell about it        </h1>
-        <h2>Feel free to share your idea and what you think about this website</h2>
-        <P>Our services have the pleasur to know about it, and you can click here to tell us more</p>
-        <button></button> <!--dirige ver la page commentaire/evaluation/contact-->
-    </section>
+  <div class="boxx">
+    <div class="image_fit">
+      <img src="images/pic0.jpg" alt="" />
+    </div>
+    <div class="content">
+      <header class="align-center">
+        <h2>Evenements à venir</h2>
+        <p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
+      </header>
+      <hr />
+      <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam
+        elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.
+        Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+      <p>Vivamus fermentum nibh vel pharetra blandit. Cras a purus urna. Sed et libero ex. Orci varius natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse id hendrerit felis. Nulla viverra tempor
+        dui at congue. Pellentesque quis nulla ornare, congue nisi id, finibus nulla. Aliquam sit amet hendrerit purus.
+        Donec libero massa, posuere fermentum eros sit amet, maximus fringilla augue. Maecenas at rhoncus lorem. Vivamus
+        ultricies consequat est, efficitur convallis libero. Vivamus rutrum semper mauris, vitae consequat eros tempor
+        ac. Pellentesque et ornare sapien</p>
+    </div>
+  </div>
 
+  <div id="vide"></div>
 
+  <div>
+    <h2 class="events">Ne jamais sortir sans sa blague belge</h2>
+  </div>
 
-    <footer>
+  <div class="centre">
+    <div id="box_1"></div>
+    <div id="box_2"></div>
+    <div id="box_3"></div>
+  </div>
 
-    </footer>
+     
+<!--
+    <div class="video"></div>
+    <video controls src="images/vid_bxl.mp4"></video>
+  </div>
+-->
+<footer>
+  <section id="Social-Network" class="Social-Network">
+      <div id="Social-Network-Icons">
+          <ul>
+              <a href="https://www.facebook.com/">
+                  <li><img src="icons/Facebook.jpg"  class="Social-Network-Icons" name="Facebook" alt="icon-Facebook">
+                  </li>
+              </a>
+              <a href="https://www.instagram.com/">
+                  <li><img src="icons/Instagram.jpg"  class="Social-Network-Icons" name="Instagram" alt="icon-Instagram">
+                  </li>
+              </a>
+              <a href="https://twitter.com/">
+                  <li><img src="icons/Twitter.jpg"  class="Social-Network-Icons" name="Twitter" alt="icon-Twitter">
+                  </li>
+              </a>
+              <a href="https://www.youtube.com/">
+                  <li><img src="icons/Youtube.jpg"  class="Social-Network-Icons" name="Youtube" alt="icon-Youtube">
+                  </li>
+              </a>
+              <a href="https://web.whatsapp.com/">
+                  <li><img src="icons/Whatsapp.jpg"  class="Social-Network-Icons" name="Whatsapp" alt="icon-Whastapp">
+                  </li>
+              </a>
+          </ul>
+      </div>
+      <div id="Connect With Us" >
+          <ul class="Newsletter"> <h3>CONNECT WITH US</h3>
+              <form action="https://formspree.io/f/xyylgwdn" method="POST">
+                  <label id="newsletter" name="newsletter"> Enter your e-mail: <br>
+                      <input type="email" name="_replyto" placeholder="Newsletter">
+                  </label>
+                  <button class="buttoninfo" type="submit" value="Send">Send</button>
+              </form>
+          </ul>
+      </div>
+      <div class="about_us">
+          <h3>ABOUT US</h3>
+          <p>Project from students at</p> <br>
+          <p> Wild Code School Brussels 2021 </p>
+      </div>
+  </section>
 
+</footer>
 </body>
 
 </html>
