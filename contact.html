@@ -10,26 +10,23 @@
 </head>
 
 <body>
-    <!-- mpc    À METTRE ?!<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
- À VOIR AVEC LEOPOLD -->
-    <div class="section_haut">
-        <header class="header">
-            <a href="index.html">
-                <div id="logo"><img src="images/bb.png"></div>
-            </a>
-
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </header>
-    </div>
+    <section>
+  <header class="header">
+    <a href="index.html">
+      <div id="logo"><img src="images/bb.png"></div>
+    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul>
+  </header>
+</section>
     <div>
         <div class="contact_image_title">
-            <!--<img src="images/contact_us.jpg">-->
             <div class="contact_us_title">
                 <h1 id="contact">Contact </h1> <br>
                 <p> </p>
@@ -47,57 +44,66 @@
                 <input class="name_mail_contact" type="email" name="_replyto" placeholder="E-mail"> <br><br>
                 <label name="subject">Please choose your subject :</label>
                 <select class="subject" name="subject" id="subject">
+                    <option value="other">Newsletter</option> <br>
                     <option value="evaluation">Evaluation</option>
                     <option value="Comment">Comment</option>
                     <option value="Need-Information">Need some information</option>
                     <option value="other">Other</option> <br>
                 </select><br><br>
-                <textarea class="message" type="text" name="message" placeholder="Your message"
-                    style="width: 600px"></textarea><br>
+                <textarea class="message" type="text" name="message" placeholder="Your message" style="width: 600px"
+                    style="height: 600px"></textarea><br>
                 <button class="buttoninfo" type="submit" value="Send">Send</button>
             </form> <br>
         </div>
     </section>
+
     <div class="map">
+        <div class="black_line"></div>
         <h2 class="title-map"> Where you can find us</h2>
         <div class="map-container-google" style="">
             <iframe class="real-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.7422615279849!2d4.358775707372698!3d50.85025746721319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c59e8cd297cb%3A0x5e17c33419e8091d!2sWild%20Code%20School%20Training%20Web%20Developer!5e0!3m2!1spt-PT!2sbe!4v1616511570359!5m2!1spt-PT!2sbe"
                 loading="lazy"></iframe>
         </div>
-    </div>
-    <h1> Our Team</h1>
-    <div class="identification-team">
-        <div class="id-Léopold">
-            <img class="id-photo" src="images/Leopold.jpg" name="Leopold">
-            <p>Léopold</p>
-            <p>Web Develloper, </p>
-        </div>
-        <div class="id-Xavier">
-            <img class="id-photo" src="images/Xavier.jpg" name="Xavier">
-            <p>Xavier</p>
-        </div>
-        <div class="id-Mario">
-            <img class="id-photo" src="images/Mario.jpg" name="Mario">
-            <p>Mário</p>
-        </div>
+        <div class="black_line2"></div>
     </div>
 
     <!--for all pages-->
-    <footer>
-        <section class="Social-Network" id="Social-Network">
-            <div class="links">
-                <div id="Connect With Us">
-                    <ul class="Newsletter">
-                        <h3>CONNECT WITH US:</h3>
+    <section>
+        <footer>
+            <div class="about_us_title">
+                <h2>ABOUT US</h2>
+            </div>
+            <div class=first_row>
+                <div class="identification-team">
+                    <div class="leopold">
+                        <img class="id-photo" src="images/Leopold.jpg" name="Leopold">
+                        <p>Léopold</p>
+                    </div>
+                    <div class="xavier">
+                        <img class="id-photo" src="images/Xavier.jpg" name="Xavier">
+                        <p>Xavier</p>
+                    </div>
+                    <div class="mario">
+                        <img class="id-photo" src="images/Mario.jpg" name="Mario">
+                        <p>Mário</p>
+                    </div>
+                </div>
+                <div>
+                    <!--<div>
+                        <h5 class="Connect_With_Us">CONNECT WITH US:</h5>
+                        <ul class="Newsletter"></ul>
                         <form action="https://formspree.io/f/xyylgwdn" method="POST">
-                            <label id="newsletter" name="newsletter"> Enter your e-mail: <br>
-                                <input type="email" name="_replyto" placeholder="Newsletter">
+                            <label id="newsletter" name="newsletter">
+                                <input type="email" name="_replyto" placeholder="Newsletter" style="width: 200px;">
                             </label>
                             <button class="buttoninfo" type="submit" value="Send">Send</button>
                         </form>
-                    </ul>
+                        </ul>
+                    </div>-->
                 </div>
+            </div>
+            <div class=second_row>
                 <div class="Social-Network-Icons">
                     <a href="https://www.facebook.com/">
                         <ul><img src="icons/Facebook.jpg" class="Social-Network-Icons" name="Facebook"
@@ -123,17 +129,17 @@
                         </ul><br>
                     </a>
                 </div>
-            </div>
-            <div class="about_us">
-                <h3>ABOUT US</h3>
-                <p>
-                    <a href="https://wildcodeschool.com/brussels/" target="_blank"> Project from students at Brussels </a>
-                    <i class="far fa-copyright"></i> 2021</p>
-            </div>
-        </section>
 
-    </footer>
-
+                <div class="url_wild">
+                    <p>Project from students at
+                        <a href="https://wildcodeschool.com/brussels/" target="_blank"> Wild Code School &copy; Brussels
+                        </a>
+                        <i class="far fa-copyright"></i> 2021
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
